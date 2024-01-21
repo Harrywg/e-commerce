@@ -1,0 +1,89 @@
+.homepage_hero-image {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  filter: saturate(2) brightness(0.5);
+}
+.homepage_main h1 {
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0px;
+  margin: 0;
+}
+
+.homepage_hero-wrap {
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 25rem;
+  position: relative;
+}
+
+.homepage_main {
+  padding-top: 2rem;
+}
+
+.homepage_hero-wrap .overlay {
+  position: absolute;
+  inset: 0;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage_hero-wrap h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: white;
+  font-weight: 1000;
+  margin: 0;
+  text-align: center;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.575));
+}
+
+.homepage_hero-wrap p {
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.575));
+}
+.homepage_hero-wrap p span {
+  position: relative;
+  overflow: hidden;
+}
+.underline {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transform: scaleY(2);
+}
+
+.homepage_hero-wrap a {
+  background: var(--red);
+  border-radius: 2rem;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  display: block;
+  margin-inline: auto;
+  margin-top: 2rem;
+  width: fit-content;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.575));
+  transition: 0.1s ease-out;
+}
+
+.homepage_hero-wrap a:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.575)) brightness(1.1);
+}
+
+.homepage_featured {
+  margin-top: 3rem;
+}
+.homepage_featured h2 {
+  font-size: 2rem;
+}
