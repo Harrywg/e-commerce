@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="homepage_featured">
-          <h2>What's Hot? 🔥</h2>
+          <h2>What&apos;s Hot? 🔥</h2>
           <Featured />
         </div>
       </main>
