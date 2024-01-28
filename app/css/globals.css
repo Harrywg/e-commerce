@@ -10,6 +10,10 @@
   --red: rgb(199, 72, 72);
 }
 
+body {
+  margin: 0;
+}
+
 .highlight:hover {
   filter: brightness(1.1);
 }
@@ -34,8 +38,17 @@ a.logo b {
   padding-inline: 2rem;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: white;
+  margin: auto;
+  width: 100%;
+}
+
 .header-top {
-  padding-block: 0.5rem 1rem;
+  padding-block: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +105,45 @@ a.logo b {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 3rem;
+}
+
+.header-right .header-links {
+  display: flex;
+  gap: 1rem;
+}
+.header-right .header-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  font-size: 0.8rem;
+}
+.header-right .header-links a.highlight {
+  color: var(--red);
+}
+
+.header-right .header-links a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: var(--blue);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.header-right .header-links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.header-right .header-links a.highlight:after {
+  background: var(--red);
 }
 
 #shopping-cart img {
@@ -142,7 +193,7 @@ a.logo b {
 
 .feat-prod_wrap {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -161,10 +212,12 @@ a.logo b {
   position: relative;
   width: 100%;
   aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .feat-prod img {
   width: 100%;
+  transition: 0.1s ease-out;
 }
 
 .feat-prod_sale,
@@ -198,4 +251,13 @@ a.logo b {
 
 .feat-prod:hover {
   background: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+.feat-prod:hover img {
+  transform: scale(1.1);
+}
+
+.feat-prod:hover h3 {
+  text-decoration: underline;
 }
