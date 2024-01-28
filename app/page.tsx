@@ -4,6 +4,7 @@ import Image from "next/image";
 import heroImage from "./assets/ai-hero.png";
 import underline from "./assets/svg/underline.svg";
 import Featured from "./components/Featured";
+import ProductSlider from "./components/ProductSlider";
 export default function Home() {
   return (
     <>
@@ -38,6 +39,11 @@ export default function Home() {
         <div className="homepage_featured">
           <h2>What&apos;s Hot? 🔥</h2>
           <Featured />
+        </div>
+
+        <div className="homepage_sliders">
+          <h2>Product</h2>
+          <ProductSlider />
         </div>
       </main>
       <Footer />

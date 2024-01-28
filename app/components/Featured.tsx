@@ -17,7 +17,6 @@ export default function Featured() {
 
   useEffect(() => {
     setIsLoading(false);
-    console.log("rerender");
   }, [featuredProducts]);
 
   if (isLoading)

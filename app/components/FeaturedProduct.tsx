@@ -8,7 +8,7 @@ export default function FeaturedProduct({
   loading: boolean;
 }) {
   return (
-    <div className="feat-prod">
+    <a className="feat-prod">
       <div className="feat-prod_image-wrap">
         <Image
           src={placeholder}
@@ -35,6 +35,6 @@ export default function FeaturedProduct({
           </span>
         </p>
       </div>
-    </div>
+    </a>
   );
 }

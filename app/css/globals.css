@@ -118,6 +118,7 @@ main {
   display: flex;
   gap: 2rem;
 }
+
 .header-right .header-links a {
   /* text-transform: uppercase; */
   text-decoration: none;
@@ -126,6 +127,7 @@ main {
   display: inline-block;
   position: relative;
   font-size: 0.8rem;
+  color: black;
 }
 .header-right .header-links a.highlight {
   color: var(--red);
