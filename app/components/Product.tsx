@@ -1,17 +1,21 @@
-export default function Product() {
+"use client";
+import placeholder from "../assets/svg/placeholder.svg";
+import Image from "next/image";
+
+export default function Product({
+  product,
+  loading,
+}: {
+  product: Product;
+  loading: boolean;
+}) {
   return (
-    <div>
-      <div className="product">
-        <div className="product_image-wrap"></div>
-        <div className="">
-          <h3>Title</h3>
-          <p></p>
-          <p className="product_price">
-            <span className=""></span> <span className=""></span>{" "}
-            <span className=""></span>
-          </p>
-        </div>
+    <a className="embla__slide product">
+      <div className="product_image-wrap">
+        <Image src={placeholder} alt="placeholder" layout="fill" />
       </div>
-    </div>
+      <p>Title</p>
+      <p>Category</p>
+    </a>
   );
 }

@@ -42,8 +42,10 @@ export default function Home() {
         </div>
 
         <div className="homepage_sliders">
-          <h2>Product</h2>
-          <ProductSlider />
+          <h2>Computing</h2>
+          <ProductSlider category="computing" amount={20} amountShown={8} />
+          <h2>Appliances</h2>
+          <ProductSlider category="appliances" amount={20} amountShown={8} />
         </div>
       </main>
       <Footer />
