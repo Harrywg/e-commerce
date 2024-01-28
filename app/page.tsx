@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Image from "next/image";
 import heroImage from "./assets/ai-hero.png";
 import underline from "./assets/svg/underline.svg";
@@ -39,6 +40,7 @@ export default function Home() {
           <Featured />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

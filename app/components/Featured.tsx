@@ -27,13 +27,14 @@ export default function Featured() {
         <FeaturedProduct loading={true} />
         <FeaturedProduct loading={true} />
         <FeaturedProduct loading={true} />
+        <FeaturedProduct loading={true} />
       </div>
     );
   else
     return (
       <div className="feat-prod_wrap">
         {featuredProducts.map((product: Product, i) => {
-          if (i < 4)
+          if (i < 5)
             return (
               <FeaturedProduct
                 product={product}

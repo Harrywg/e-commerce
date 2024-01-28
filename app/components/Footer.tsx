@@ -8,7 +8,9 @@ export default function Footer() {
         <nav></nav>
         <p>
           This is a demo project by{" "}
-          <a href="https://harrywg.dev/">Harry Ward-Gray</a>
+          <a className="highlight" href="https://harrywg.dev/" target="_blank">
+            Harry Ward-Gray
+          </a>
         </p>
       </div>
     </footer>
