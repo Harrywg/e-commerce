@@ -86,9 +86,70 @@
 }
 .homepage_featured h2 {
   font-size: 2rem;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .homepage_sliders {
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+
+.homepage_sliders h2 {
+  /* margin-bottom: 3px; */
+}
+
+.homepage_sliders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.homepage_sliders-grid-titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.homepage_sliders-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 532px) {
+  .homepage_sliders-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.deal-banner img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.9);
+  object-fit: cover;
+  object-position: 30px;
+}
+
+.deal-banner {
+  overflow: hidden;
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.1s ease-out;
+}
+
+.deal-banner:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1050px) {
+  .homepage_sliders-grid.slider-banner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.slider-banner {
+  justify-content: center;
+  align-items: center;
 }

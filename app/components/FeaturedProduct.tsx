@@ -1,5 +1,6 @@
-import placeholder from "../assets/svg/placeholder.svg";
+import placeholder from "../assets/product-images/mouse.png";
 import Image from "next/image";
+import Product from "./Product";
 export default function FeaturedProduct({
   product,
   loading,

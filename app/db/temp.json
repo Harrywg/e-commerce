@@ -7,7 +7,7 @@
     "on_sale": true,
     "discount_percent": 10,
     "sale_price": 1124.94,
-    "image_url": "https://example.com/images/com-7318.jpg",
+    "image_url": "/assets/product-images/mouse.png",
     "featured": false
   },
   {
@@ -18,7 +18,7 @@
     "on_sale": true,
     "discount_percent": 0,
     "sale_price": 759.2,
-    "image_url": "https://example.com/images/mob-5520.jpg",
+    "image_url": "/assets/product-images/tablet.png",
     "featured": false
   },
   {
@@ -29,7 +29,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1284.98,
-    "image_url": "https://example.com/images/gam-4848.jpg",
+    "image_url": "/assets/product-images/vr.png",
     "featured": false
   },
   {
@@ -40,7 +40,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 318.98,
-    "image_url": "https://example.com/images/app-8541.jpg",
+    "image_url": "/assets/product-images/blender.png",
     "featured": false
   },
   {
@@ -51,7 +51,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 331.26,
-    "image_url": "https://example.com/images/com-8039.jpg",
+    "image_url": "/assets/product-images/mouse.png",
     "featured": false
   },
   {
@@ -62,7 +62,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 209.93,
-    "image_url": "https://example.com/images/mob-8564.jpg",
+    "image_url": "/assets/product-images/phone-case.png",
     "featured": false
   },
   {
@@ -84,7 +84,7 @@
     "on_sale": true,
     "discount_percent": 50,
     "sale_price": 430.43,
-    "image_url": "https://example.com/images/app-3471.jpg",
+    "image_url": "/assets/product-images/air-fryer.png",
     "featured": true
   },
   {
@@ -106,7 +106,7 @@
     "on_sale": true,
     "discount_percent": 15,
     "sale_price": 891.01,
-    "image_url": "https://example.com/images/mob-1513.jpg",
+    "image_url": "/assets/product-images/tablet.png",
     "featured": false
   },
   {
@@ -128,7 +128,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 902.6,
-    "image_url": "https://example.com/images/app-4774.jpg",
+    "image_url": "/assets/product-images/microwave.png",
     "featured": false
   },
   {
@@ -150,7 +150,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 365.11,
-    "image_url": "https://example.com/images/mob-6290.jpg",
+    "image_url": "/assets/product-images/phone-case.png",
     "featured": false
   },
   {
@@ -161,7 +161,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1176.48,
-    "image_url": "https://example.com/images/gam-7348.jpg",
+    "image_url": "/assets/product-images/vr.png",
     "featured": false
   },
   {
@@ -194,7 +194,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 482.64,
-    "image_url": "https://example.com/images/mob-5539.jpg",
+    "image_url": "/assets/product-images/tablet.png",
     "featured": true
   },
   {
@@ -282,7 +282,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 743.99,
-    "image_url": "https://example.com/images/mob-9146.jpg",
+    "image_url": "/assets/product-images/phone-case.png",
     "featured": false
   },
   {
@@ -293,7 +293,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 456.45,
-    "image_url": "https://example.com/images/gam-3836.jpg",
+    "image_url": "/assets/product-images/vr.png",
     "featured": false
   },
   {
@@ -304,7 +304,7 @@
     "on_sale": true,
     "discount_percent": 15,
     "sale_price": 882.21,
-    "image_url": "https://example.com/images/app-9482.jpg",
+    "image_url": "/assets/product-images/blender.png",
     "featured": false
   },
   {
@@ -326,7 +326,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 708.62,
-    "image_url": "https://example.com/images/mob-9307.jpg",
+    "image_url": "/assets/product-images/tablet.png",
     "featured": false
   },
   {
@@ -348,7 +348,7 @@
     "on_sale": true,
     "discount_percent": 50,
     "sale_price": 728.31,
-    "image_url": "https://example.com/images/app-2679.jpg",
+    "image_url": "/assets/product-images/microwave.png",
     "featured": true
   },
   {
@@ -370,7 +370,7 @@
     "on_sale": true,
     "discount_percent": 30,
     "sale_price": 555.85,
-    "image_url": "https://example.com/images/mob-6514.jpg",
+    "image_url": "/assets/product-images/smartphone.png",
     "featured": true
   },
   {

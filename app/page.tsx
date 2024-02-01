@@ -5,6 +5,7 @@ import heroImage from "./assets/ai-hero.png";
 import underline from "./assets/svg/underline.svg";
 import Featured from "./components/Featured";
 import ProductSlider from "./components/ProductSlider";
+import dealBanner from "./assets/deal-banner.png";
 export default function Home() {
   return (
     <>
@@ -42,10 +43,40 @@ export default function Home() {
         </div>
 
         <div className="homepage_sliders">
-          <h2>Computing</h2>
-          <ProductSlider category="computing" amount={20} amountShown={8} />
-          <h2>Appliances</h2>
-          <ProductSlider category="appliances" amount={20} amountShown={8} />
+          <div className="homepage_sliders-grid slider-banner">
+            <a className="deal-banner highlight">
+              <Image src={dealBanner} alt="special deal"></Image>
+            </a>
+            <div>
+              <div className="homepage_sliders-title">
+                <h2>Computing</h2>
+                <a href="">View All</a>
+              </div>
+              <ProductSlider category="computing" amount={20} />
+            </div>
+          </div>
+          <div className="homepage_sliders-title">
+            <h2>Mobile</h2>
+            <a href="">View All</a>
+          </div>
+          <ProductSlider category="mobile" amount={20} />
+          <div className="homepage_sliders-grid">
+            <div>
+              <div className="homepage_sliders-title">
+                <h2>Gaming</h2>
+                <a href="">View All</a>
+              </div>
+
+              <ProductSlider category="gaming" amount={10} />
+            </div>
+            <div>
+              <div className="homepage_sliders-title">
+                <h2>Appliances</h2>
+                <a href="">View All</a>
+              </div>
+              <ProductSlider category="appliances" amount={10} />
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

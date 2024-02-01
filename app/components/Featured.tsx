@@ -33,7 +33,7 @@ export default function Featured() {
     return (
       <div className="feat-prod_wrap">
         {featuredProducts.map((product: Product, i) => {
-          if (i < 5)
+          if (i < 4)
             return (
               <FeaturedProduct
                 product={product}
