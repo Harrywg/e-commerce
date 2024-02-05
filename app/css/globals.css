@@ -393,9 +393,13 @@ footer .container {
 
 .product-slider_button svg {
   transform: scale(2);
-  fill: white;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.877));
-  /* mix-blend-mode: difference; */
+  fill: rgba(44, 44, 44, 0.63);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.74));
+  transition: 0.1s ease-out;
+}
+
+.product-slider_button svg:hover {
+  fill: rgb(226, 226, 226);
 }
 
 .product strong,

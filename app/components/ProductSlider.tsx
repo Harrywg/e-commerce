@@ -14,7 +14,11 @@ export default function ProductSlider({
 }) {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    dragFree: true,
+    duration: 10,
+  });
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -35,16 +39,9 @@ export default function ProductSlider({
 
   useEffect(() => {
     setIsLoading(false);
-    console.log(products);
   }, [products]);
 
   return (
-    // <div className="product-slider">
-    //   {products.map((product: Product, i) => {
-    //     return <Product key={product.id} />;
-    //   })}
-    // </div>
-
     <div className="product-slider embla" ref={emblaRef}>
       <div className="embla__container">
         {products.map((product: Product, i) => {
