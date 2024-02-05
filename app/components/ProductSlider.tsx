@@ -25,7 +25,6 @@ export default function ProductSlider({
   }, [emblaApi]);
 
   useEffect(() => {
-    console.log(`/api/products/${category}&&limit=${amount}`);
     async function fetchProducts() {
       const res = await fetch(`/api/products/${category}?limit=${amount}`);
       const data = await res.json();

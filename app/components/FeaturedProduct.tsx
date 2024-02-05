@@ -11,12 +11,7 @@ export default function FeaturedProduct({
   return (
     <a className="feat-prod">
       <div className="feat-prod_image-wrap">
-        <Image
-          src={placeholder}
-          alt={product?.name || ""}
-          layout={"fill"}
-          objectFit={"contain"}
-        />
+        <img src={product?.image_url} alt="" />
       </div>
       <div className={`feat-prod_bottom `}>
         <h3>{product?.name || "Loading..."} </h3>

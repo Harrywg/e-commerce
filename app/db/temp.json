@@ -7,7 +7,7 @@
     "on_sale": true,
     "discount_percent": 10,
     "sale_price": 1124.94,
-    "image_url": "/assets/product-images/mouse.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/mouse_vqw5to.png",
     "featured": false
   },
   {
@@ -15,10 +15,10 @@
     "name": "Tablet",
     "category": "Mobile",
     "price": 759.2,
-    "on_sale": true,
+    "on_sale": false,
     "discount_percent": 0,
     "sale_price": 759.2,
-    "image_url": "/assets/product-images/tablet.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/tablet_kwxylv.png",
     "featured": false
   },
   {
@@ -29,7 +29,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1284.98,
-    "image_url": "/assets/product-images/vr.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/vr_n8ouvm.png",
     "featured": false
   },
   {
@@ -40,7 +40,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 318.98,
-    "image_url": "/assets/product-images/blender.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/blender_uf1oyn.png",
     "featured": false
   },
   {
@@ -51,7 +51,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 331.26,
-    "image_url": "/assets/product-images/mouse.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/mouse_vqw5to.png",
     "featured": false
   },
   {
@@ -62,7 +62,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 209.93,
-    "image_url": "/assets/product-images/phone-case.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/phone-case_ts24iq.png",
     "featured": false
   },
   {
@@ -73,7 +73,7 @@
     "on_sale": true,
     "discount_percent": 40,
     "sale_price": 315.86,
-    "image_url": "https://example.com/images/gam-2098.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707169759/gaming-chair_c8w3tz.webp",
     "featured": false
   },
   {
@@ -84,7 +84,7 @@
     "on_sale": true,
     "discount_percent": 50,
     "sale_price": 430.43,
-    "image_url": "/assets/product-images/air-fryer.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/air-fryer_infqqc.png",
     "featured": true
   },
   {
@@ -95,7 +95,7 @@
     "on_sale": true,
     "discount_percent": 30,
     "sale_price": 510.68,
-    "image_url": "https://example.com/images/com-3567.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707169759/keyboard_vykhoc.webp",
     "featured": false
   },
   {
@@ -106,7 +106,7 @@
     "on_sale": true,
     "discount_percent": 15,
     "sale_price": 891.01,
-    "image_url": "/assets/product-images/tablet.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/tablet_kwxylv.png",
     "featured": false
   },
   {
@@ -117,7 +117,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1300.65,
-    "image_url": "https://example.com/images/gam-6778.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170217/gaming-console_xrkmax.webp",
     "featured": false
   },
   {
@@ -128,7 +128,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 902.6,
-    "image_url": "/assets/product-images/microwave.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/microwave_ofmpnn.png",
     "featured": false
   },
   {
@@ -139,7 +139,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1018.19,
-    "image_url": "https://example.com/images/com-2044.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170217/monitor_bdqeov.webp",
     "featured": false
   },
   {
@@ -150,7 +150,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 365.11,
-    "image_url": "/assets/product-images/phone-case.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/phone-case_ts24iq.png",
     "featured": false
   },
   {
@@ -161,7 +161,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1176.48,
-    "image_url": "/assets/product-images/vr.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/vr_n8ouvm.png",
     "featured": false
   },
   {
@@ -172,7 +172,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1002.89,
-    "image_url": "https://example.com/images/app-2756.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170218/vacuum-cleaner_ueugom.webp",
     "featured": false
   },
   {
@@ -183,7 +183,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 963.42,
-    "image_url": "https://example.com/images/com-3836.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707169759/keyboard_vykhoc.webp",
     "featured": false
   },
   {
@@ -194,7 +194,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 482.64,
-    "image_url": "/assets/product-images/tablet.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/tablet_kwxylv.png",
     "featured": true
   },
   {
@@ -205,7 +205,7 @@
     "on_sale": true,
     "discount_percent": 25,
     "sale_price": 905.24,
-    "image_url": "https://example.com/images/gam-5857.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707169759/gaming-chair_c8w3tz.webp",
     "featured": false
   },
   {
@@ -216,7 +216,7 @@
     "on_sale": true,
     "discount_percent": 30,
     "sale_price": 591.96,
-    "image_url": "https://example.com/images/app-1059.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170218/refridgerator_fxyhjv.webp",
     "featured": false
   },
   {
@@ -227,7 +227,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 342.27,
-    "image_url": "https://example.com/images/com-7305.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170219/laptop_x3qpej.webp",
     "featured": false
   },
   {
@@ -238,7 +238,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 900.76,
-    "image_url": "https://example.com/images/mob-9588.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170220/charger_zfmfwl.webp",
     "featured": false
   },
   {
@@ -249,7 +249,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 79.55,
-    "image_url": "https://example.com/images/gam-6875.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170220/gamepad_fvrvxy.webp",
     "featured": false
   },
   {
@@ -260,7 +260,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 966.71,
-    "image_url": "https://example.com/images/app-4518.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170221/washing-machine_opgzwp.webp",
     "featured": false
   },
   {
@@ -271,7 +271,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 1409.27,
-    "image_url": "https://example.com/images/com-6726.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170217/monitor_bdqeov.webp",
     "featured": false
   },
   {
@@ -282,7 +282,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 743.99,
-    "image_url": "/assets/product-images/phone-case.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/phone-case_ts24iq.png",
     "featured": false
   },
   {
@@ -293,7 +293,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 456.45,
-    "image_url": "/assets/product-images/vr.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/vr_n8ouvm.png",
     "featured": false
   },
   {
@@ -304,7 +304,7 @@
     "on_sale": true,
     "discount_percent": 15,
     "sale_price": 882.21,
-    "image_url": "/assets/product-images/blender.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/blender_uf1oyn.png",
     "featured": false
   },
   {
@@ -315,7 +315,7 @@
     "on_sale": true,
     "discount_percent": 10,
     "sale_price": 735.64,
-    "image_url": "https://example.com/images/com-8449.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170222/graphics-card_creav6.webp",
     "featured": false
   },
   {
@@ -326,7 +326,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 708.62,
-    "image_url": "/assets/product-images/tablet.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/tablet_kwxylv.png",
     "featured": false
   },
   {
@@ -337,7 +337,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 796.04,
-    "image_url": "https://example.com/images/gam-4605.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170223/controller_vuwu17.webp",
     "featured": false
   },
   {
@@ -348,7 +348,7 @@
     "on_sale": true,
     "discount_percent": 50,
     "sale_price": 728.31,
-    "image_url": "/assets/product-images/microwave.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/microwave_ofmpnn.png",
     "featured": true
   },
   {
@@ -356,10 +356,10 @@
     "name": "Monitor",
     "category": "Computing",
     "price": 766.19,
-    "on_sale": true,
+    "on_sale": false,
     "discount_percent": 0,
     "sale_price": 766.19,
-    "image_url": "https://example.com/images/com-7920.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170217/monitor_bdqeov.webp",
     "featured": false
   },
   {
@@ -370,7 +370,7 @@
     "on_sale": true,
     "discount_percent": 30,
     "sale_price": 555.85,
-    "image_url": "/assets/product-images/smartphone.png",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168987/smartphone_c5bkyj.png",
     "featured": true
   },
   {
@@ -392,7 +392,7 @@
     "on_sale": true,
     "discount_percent": 40,
     "sale_price": 357.98,
-    "image_url": "https://example.com/images/app-1081.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707168986/microwave_ofmpnn.png",
     "featured": false
   },
   {
@@ -403,7 +403,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 887.14,
-    "image_url": "https://example.com/images/com-1495.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170222/desktop-pc_trwds9.webp",
     "featured": false
   },
   {
@@ -414,7 +414,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 769.19,
-    "image_url": "https://example.com/images/mob-4969.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170224/smartwatch_oavvcs.webp",
     "featured": false
   },
   {
@@ -425,7 +425,7 @@
     "on_sale": true,
     "discount_percent": 20,
     "sale_price": 393.66,
-    "image_url": "https://example.com/images/gam-6410.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707169759/gaming-chair_c8w3tz.webp",
     "featured": true
   },
   {
@@ -436,7 +436,7 @@
     "on_sale": false,
     "discount_percent": 0,
     "sale_price": 508.08,
-    "image_url": "https://example.com/images/app-5514.jpg",
+    "image_url": "https://res.cloudinary.com/dorgajdib/image/upload/v1707170218/refridgerator_fxyhjv.webp",
     "featured": false
   }
 ]

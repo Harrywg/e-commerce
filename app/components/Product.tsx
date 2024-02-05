@@ -1,6 +1,7 @@
 "use client";
-import placeholder from "../assets/product-images/vr.png";
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import placeholder from "../assets/product-images/vr.png";
 
 export default function Product({
   product,
@@ -9,14 +10,16 @@ export default function Product({
   product: Product;
   loading: boolean;
 }) {
+  const [imageUrl, setImageUrl] = useState("/placeholder.svg");
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <a className="embla__slide product">
       <div className="product_image-wrap">
-        {/* <Image src={placeholder} alt="placeholder" /> */}
-        <img src={product.image_url} alt="" />
+        <img src={product?.image_url} alt="" />
       </div>
       <div className="product_bottom">
-        <strong>TitleTitleTitleTitleTitleTitle</strong>
+        <strong>{product?.name}</strong>
 
         <p className="product_price">
           <span>£{product.on_sale ? product.sale_price : product.price}</span>
