@@ -27,10 +27,36 @@ a.logo {
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 4rem;
+  transition: 0.3s ease-out;
+  position: relative;
+}
+
+.scroll a.logo {
+  padding: 0.5rem 1rem;
+  /* border-radius: 0; */
 }
 
 a.logo b {
   font-weight: 800;
+}
+
+a.logo::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  background: var(--blue);
+  transition: 0.5s ease-out;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.scroll a.logo::after {
+  width: 200vw;
+  height: 100vw;
 }
 
 .container {
@@ -46,10 +72,18 @@ header {
   background: white;
   margin: auto;
   width: 100%;
+  transition: 0.1s ease-out;
+  overflow: hidden;
 }
 
 header.scroll {
-  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.11));
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.452));
+}
+.scroll a {
+  color: white !important;
+}
+header.scroll .header-top {
+  padding-block: 0px;
 }
 
 main {
@@ -63,6 +97,7 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  transition: 0.1s ease-out;
 }
 
 .search-input {
@@ -132,6 +167,7 @@ main {
   position: relative;
   font-size: 0.8rem;
   color: black;
+  transition: 0.4s ease-in-out;
 }
 .header-right .header-links a.highlight {
   color: var(--red);

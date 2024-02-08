@@ -1,5 +1,8 @@
 import Image from "next/image";
 import shoppingCart from "../assets/svg/cart.svg";
+import Link from "next/link";
+import Script from "next/script";
+
 export default function Header() {
   return (
     <>
@@ -10,35 +13,28 @@ export default function Header() {
           </a>
           <div className="header-right">
             <nav className="header-links">
-              <a className="standard" href="">
+              <Link className="standard" href="/computing">
                 <span>Computing</span>
-              </a>
-              <a className="standard" href="">
+              </Link>
+              <Link className="standard" href="/mobile">
                 <span>Mobile</span>
-              </a>
-              <a className="standard" href="">
+              </Link>
+              <Link className="standard" href="/gaming">
                 <span>Gaming</span>
-              </a>
-              <a className="standard" href="">
+              </Link>
+              <Link className="standard" href="/appliances">
                 <span>Appliances</span>
-              </a>
-              <a className="highlight" href="">
-                <span> Deals</span>
-              </a>
+              </Link>
+              <Link className="highlight" href="/deals">
+                <span>Deals</span>
+              </Link>
             </nav>
             <form className="search-input">
               <input type="search" id="" placeholder="Search" />
               <button>🔎︎</button>
             </form>
             <nav>
-              <a id="shopping-cart" href="">
-                <Image
-                  src={shoppingCart}
-                  width={30}
-                  height={30}
-                  alt="shopping cart"
-                />
-              </a>
+              <button>CART</button>
             </nav>
           </div>
         </div>

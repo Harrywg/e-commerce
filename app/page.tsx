@@ -6,10 +6,12 @@ import underline from "./assets/svg/underline.svg";
 import Featured from "./components/Featured";
 import ProductSlider from "./components/ProductSlider";
 import dealBanner from "./assets/deal-banner.png";
+import ScrollListener from "./components/ScrollListener";
 export default function Home() {
   return (
     <>
       <Header />
+      <ScrollListener />
       <main className="homepage_main container">
         <h1>The Best Place For Tech</h1>
         <div className="homepage_hero-wrap">
