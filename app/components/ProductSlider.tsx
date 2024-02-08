@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Product from "./Product";
 import useEmblaCarousel from "embla-carousel-react";
-import { useCallback } from "react";
 
 export default function ProductSlider({
   category,

@@ -452,3 +452,27 @@ footer .container {
   color: var(--red);
   font-weight: bold;
 }
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .product-list {
+    grid-template-columns: 1fr !important;
+  }
+}
