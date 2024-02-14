@@ -7,7 +7,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
     const category = getPath(req.nextUrl.pathname);
     const queries = req.nextUrl.searchParams;
     const limit = queries.get("limit");
-    const file = await fs.readFile("./app/db/temp.json", "utf8");
+    const file = await fs.readFile("./app/data.json", "utf8");
     let allProducts = JSON.parse(file);
     let amountProducts = 0;
 
