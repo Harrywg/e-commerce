@@ -33,6 +33,7 @@ a.logo {
 
 .scroll a.logo {
   padding: 0.5rem 1rem;
+  margin-block: 0.5rem;
   /* border-radius: 0; */
 }
 
@@ -49,14 +50,14 @@ a.logo::after {
   transform: translate(-50%, -50%);
   width: 1px;
   background: var(--blue);
-  transition: 0.5s ease-out;
+  transition: 0.4s ease-in-out;
   border-radius: 50%;
   z-index: -1;
 }
 
 .scroll a.logo::after {
-  width: 200vw;
-  height: 100vw;
+  /* width: 300vw; */
+  /* height: 150vw; */
 }
 
 .container {
@@ -79,9 +80,7 @@ header {
 header.scroll {
   filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.452));
 }
-.scroll a {
-  color: white !important;
-}
+
 header.scroll .header-top {
   padding-block: 0px;
 }
@@ -142,9 +141,9 @@ main {
 }
 
 .search-input:hover button {
-  background: var(--light-blue);
+  /* background: var(--light-blue);
   border-color: var(--light-blue);
-  color: white;
+  color: white; */
 }
 
 .header-right {
