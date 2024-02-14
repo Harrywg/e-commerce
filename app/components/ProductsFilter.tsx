@@ -13,42 +13,66 @@ export default function ProductsFilter({
   setIsLoading: Function;
   products: Array<Product>;
 }) {
-  const [sliderValues, setSliderValues] = useState<number[]>([0, 2000]);
+  const [sliderValues, setSliderValues] = useState<number[]>([0, 0]);
   const [mostValuable, setMostValuable] = useState<number>(300);
   const handleSliderChange = (event: Event, newValue: number | number[]) => {
     setSliderValues(newValue as number[]);
   };
 
-  useEffect(() => {
-    async function fetchProducts() {
-      const response = await fetch(`/api/products/${category}?limit=20`);
-      const data = await response.json();
-      setProducts(data.products);
+  async function fetchProducts(
+    initialLoad?: boolean,
+    minPrice?: number,
+    maxPrice?: number
+  ) {
+    setIsLoading(true);
+
+    let queries = "";
+    if (minPrice) {
+      queries += `&minPrice=${minPrice}`;
     }
-    fetchProducts();
+    if (maxPrice) {
+      queries += `&maxPrice=${maxPrice}`;
+    }
+
+    const response = await fetch(
+      `/api/products/${category}?limit=20${queries}`
+    );
+    const data = await response.json();
+    setProducts(data.products);
+    if (initialLoad) {
+      setMostValuable(data.highestPrice);
+      setSliderValues([0, data.highestPrice]);
+    }
     setIsLoading(false);
+  }
+
+  useEffect(() => {
+    fetchProducts(true);
   }, []);
 
-  useEffect(() => {
-    const highestPrice = products.reduce((a, b): number => {
-      if (b.sale_price > a) {
-        return b.sale_price;
-      }
-      return a;
-    }, 0);
-
-    setMostValuable(highestPrice);
-  }, [products]);
   return (
     <div className="category_filter">
       <div className="container">
-        <input type="search" name="" id="" />
-        <Slider
-          value={sliderValues}
-          onChange={handleSliderChange}
-          valueLabelDisplay="auto"
-          max={mostValuable}
-        />
+        <div className="category_filters">
+          <div className="category_input-search-wrap">
+            <input type="search" name="" className="category_filter-search" />
+            <button>🔎︎</button>
+          </div>
+          <div className="category_input-slider-wrap">
+            <p>
+              £{sliderValues[0]} - £{sliderValues[1]}
+            </p>
+            <Slider
+              value={sliderValues}
+              onChange={handleSliderChange}
+              onChangeCommitted={() =>
+                fetchProducts(false, sliderValues[0], sliderValues[1])
+              }
+              valueLabelDisplay="auto"
+              max={mostValuable}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

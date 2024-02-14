@@ -78,7 +78,6 @@ header {
 }
 
 header.scroll {
-  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.452));
 }
 
 header.scroll .header-top {
@@ -87,7 +86,7 @@ header.scroll .header-top {
 
 main {
   /* Offset fixed header */
-  margin-top: 92px !important;
+  padding-top: 92px !important;
 }
 
 .header-top {
@@ -492,6 +491,7 @@ footer .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
+  padding-top: 3rem;
 }
 
 @media (max-width: 1000px) {

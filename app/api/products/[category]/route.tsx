@@ -1,5 +1,4 @@
 import { promises as fs } from "fs";
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
 import { getPath } from "@/utils";
 export async function GET(req: NextRequest, res: NextResponse) {
@@ -9,11 +8,22 @@ export async function GET(req: NextRequest, res: NextResponse) {
     const queries = req.nextUrl.searchParams;
     const limit = queries.get("limit");
     const file = await fs.readFile("./app/db/temp.json", "utf8");
-    const allProducts = JSON.parse(file);
+    let allProducts = JSON.parse(file);
     let amountProducts = 0;
 
-    return allProducts.filter((product: Product) => {
-      // return product.category.toLowerCase() === category && amountProducts;
+    if (queries.get("minPrice")) {
+      allProducts = allProducts.filter((product: Product) => {
+        return +product.sale_price >= Number(queries.get("minPrice"));
+      });
+    }
+
+    if (queries.get("maxPrice")) {
+      allProducts = allProducts.filter((product: Product) => {
+        return +product.sale_price <= Number(queries.get("maxPrice"));
+      });
+    }
+
+    const productsCategory = allProducts.filter((product: Product) => {
       if (product.category.toLowerCase() === category) {
         amountProducts++;
         if (limit && amountProducts <= +limit) {
@@ -21,7 +31,16 @@ export async function GET(req: NextRequest, res: NextResponse) {
         }
       }
     });
+
+    const highestPrice = allProducts.reduce((a: number, b: Product): number => {
+      if (b.sale_price > a && b.category.toLowerCase() === category) {
+        return b.sale_price;
+      }
+      return a;
+    }, 0);
+
+    return [productsCategory, highestPrice];
   }
-  const products = await fetchData();
-  return Response.json({ products });
+  const [products, highestPrice] = await fetchData();
+  return Response.json({ products, highestPrice });
 }
